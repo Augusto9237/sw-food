@@ -5,7 +5,7 @@ export default async function CategoryList() {
   const categories = await db.category.findMany({});
 
   return (
-    <div className="grid grid-cols-2 gap-3">
+    <div className="flex gap-4 overflow-x-scroll pb-2">
       {categories.map((category) => (
         <CategoryItem key={category.id} category={category} />
       ))}
