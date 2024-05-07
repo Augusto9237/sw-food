@@ -14,7 +14,6 @@ export default function CategoryItem({ category }: CategoryItemProps) {
         height={30}
         width={30}
       />
-
       <span className="text-sm font-semibold">{category.name}</span>
     </div>
   );
